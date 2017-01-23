@@ -7,90 +7,140 @@ https://css-tricks.com/box-sizing/*/
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; }
+  justify-content: space-between; }
 
 .col-1 {
-  width: 8.33333%;
+  width: 7.91667%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: orange; }
 
 .col-2 {
-  width: 16.66667%;
+  width: 15.83333%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: purple; }
 
 .col-3 {
-  width: 25%;
+  width: 23.75%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: red; }
 
 .col-4 {
-  width: 33.33333%;
+  width: 31.66667%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
-  background-color: yellow; }
+  margin-left: 10px; }
 
 .col-5 {
-  width: 41.66667%;
+  width: 39.58333%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
-  background-color: pink; }
+  margin-left: 10px; }
 
 .col-6 {
-  width: 50%;
+  width: 47.5%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: gray; }
 
 .col-7 {
-  width: 58.33333%;
+  width: 55.41667%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: brown; }
 
 .col-8 {
-  width: 66.66667%;
+  width: 63.33333%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: #676767; }
 
 .col-9 {
-  width: 75%;
+  width: 71.25%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: blue; }
 
 .col-10 {
-  width: 83.33333%;
+  width: 79.16667%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: #cc8400; }
 
 .col-11 {
-  width: 91.66667%;
+  width: 87.08333%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
+  margin-left: 10px;
   background-color: #3333ff; }
 
 .col-12 {
-  width: 100%;
+  width: 95%;
   text-align: center;
   border: 2px solid black;
   margin-top: 5px;
-  background-color: #004d00; }
+  margin-left: 10px; }
+
+body {
+  color: #979797; }
+
+a {
+  color: #F59D2A; }
+
+.header-row {
+  height: 10vmax;
+  background-color: #333333;
+  color: #BFBAB6; }
+  .header-row .brand-info {
+    padding-top: 5px; }
+    .header-row .brand-info h2 {
+      font-size: 3vmax; }
+
+.nav-list {
+  align-self: center;
+  background-color: #232323; }
+  .nav-list li {
+    display: inline;
+    margin: 5px;
+    font-size: calc(10px + .5vmax); }
+
+.big-image-row {
+  justify-content: flex-end;
+  height: 30vh; }
+
+.article {
+  text-align: left;
+  font-size: calc(12px + .25vmax); }
+  .article .small-image {
+    float: left;
+    height: 6vmax; }
+  .article a {
+    float: right; }
+
+footer {
+  background-color: #333333;
+  margin-top: 5vmax;
+  height: 5vmax; }
 
 /*# sourceMappingURL=style.css.map */
