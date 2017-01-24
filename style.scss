@@ -1,6 +1,5 @@
 @import url("reset.css");
-/* read this about this box-sizing thingy 
-https://css-tricks.com/box-sizing/*/
+
 * { box-sizing: border-box; }
 
 $small-screen: "(max-width: 500px)";
@@ -33,16 +32,13 @@ $footer-background-color: #333333;
 
 .col-1{
   @include col(1);
-  background-color: orange;
 }
 .col-2{
   @include col(2);
-  background-color: purple;
 }
 
 .col-3{
   @include col(3);
-  background-color: red;
 }
 .col-4{
   @include col(4);
@@ -53,35 +49,36 @@ $footer-background-color: #333333;
 }
 .col-6{
   @include col(6);
-  background-color: gray;
 }
 .col-7{
   @include col(7);
-  background-color: brown;
-}.col-8{
+}
+.col-8{
   @include col(8);
-  background-color: darken(grey, 10%);
 }
 .col-9{
   @include col(9);
-  background-color: blue;
 }
 .col-10{
   @include col(10);
-  background-color: darken(orange, 10%);
-}.col-11{
+}
+.col-11{
   @include col(11);
-  background-color: lighten(blue, 10%);
-}.col-12{
+}
+.col-12{
   @include col(12);
 }
 
 body{
   color: $body-text-color;
     font-size: calc(12px + .25vmax);
-    width: 90%;
-    margin: 0 auto;
+    
 
+}
+
+main{
+  width: 90%;
+    margin: 0 auto;
 }
 
 a{
@@ -92,6 +89,7 @@ a{
   background-color: $header-background-color;
   color: $header-text-color;
   .brand-info{
+    cursor: pointer;
     padding-top: 5px;
     h2{ 
       font-weight: normal;
@@ -112,12 +110,13 @@ a{
     display: inline;
     margin: .5vw;
     line-height: 3;
-    font-size: calc(9px + .25vmax);
+    font-size: 1.5vw;
+    cursor: pointer;
   }
 }
 
 .big-image-row{
-  justify-content: flex-end;
+  justify-content: center;
   height: 25vmax;
   .big-image{
     background-color: #CCCCCC;
@@ -136,9 +135,9 @@ a{
     background-color: $image-background-color;
   float: left;
   height: 6vmax;
-box-shadow: inset 0px 0px 0px 4px  white;
-
-  border: 1px solid lighten($image-background-color, 20%);
+  width: 6vmax;
+  outline: 3px solid white;
+  outline-offset: -4px;
   }
   a{
     float: right;
