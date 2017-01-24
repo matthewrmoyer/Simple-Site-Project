@@ -88,24 +88,28 @@ a {
     .header-row .brand-info h2 {
       font-weight: normal;
       font-size: 3vmax; }
+    .header-row .brand-info p {
+      font-size: 1.5vmax; }
 
 .nav-list {
   align-self: center;
   display: flex;
   background-color: #232323;
-  height: 5vmax;
+  height: 4vmax;
   align-items: center;
   justify-content: center; }
   .nav-list li {
     display: inline;
-    margin: .5vw;
+    margin: 1vw;
     line-height: 3;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     cursor: pointer; }
 
 .big-image-row {
   justify-content: center;
-  height: 25vmax; }
+  height: 27vw;
+  margin-top: 2vmax;
+  margin-bottom: 2vmax; }
   .big-image-row .big-image {
     background-color: #CCCCCC; }
   .big-image-row .empty-col {
@@ -116,6 +120,10 @@ a {
   text-align: left;
   font-size: calc(10px + .25vmax);
   line-height: 1.5; }
+  @media (max-width: 500px) {
+    .article {
+      margin: 1px;
+      word-break: break-all; } }
   .article .small-image {
     background-color: #CCCCCC;
     float: left;

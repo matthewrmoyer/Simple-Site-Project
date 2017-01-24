@@ -95,6 +95,9 @@ a{
       font-weight: normal;
       font-size: 3vmax;
     }
+    p{
+      font-size: 1.5vmax;
+    }
   }
 }
 
@@ -102,22 +105,25 @@ a{
   align-self: center;
   display: flex;
       background-color: $nav-list-color;
-      height: 5vmax;
+      height: 4vmax;
       align-items: center;
       justify-content: center;
 
   li{
     display: inline;
-    margin: .5vw;
+    margin: 1vw;
     line-height: 3;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     cursor: pointer;
+ 
   }
 }
 
 .big-image-row{
   justify-content: center;
-  height: 25vmax;
+  height: 27vw;
+  margin-top: 2vmax;
+  margin-bottom: 2vmax;
   .big-image{
     background-color: #CCCCCC;
   }
@@ -131,6 +137,11 @@ a{
   text-align: left;
   font-size: calc(10px + .25vmax);
   line-height: 1.5;
+  //keep 3 columns for small screens
+   @media #{$small-screen}{
+      margin: 1px;
+      word-break: break-all;
+  }
   .small-image{
     background-color: $image-background-color;
   float: left;
