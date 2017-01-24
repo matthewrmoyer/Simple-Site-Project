@@ -10,100 +10,79 @@ https://css-tricks.com/box-sizing/*/
   justify-content: space-between; }
 
 .col-1 {
-  width: 7.91667%;
+  width: 7.66667%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: orange; }
 
 .col-2 {
-  width: 15.83333%;
+  width: 15.33333%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: purple; }
 
 .col-3 {
-  width: 23.75%;
+  width: 23%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: red; }
 
 .col-4 {
-  width: 31.66667%;
+  width: 30.66667%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px; }
+  margin: 5px; }
 
 .col-5 {
-  width: 39.58333%;
+  width: 38.33333%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px; }
+  margin: 5px; }
 
 .col-6 {
-  width: 47.5%;
+  width: 46%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: gray; }
 
 .col-7 {
-  width: 55.41667%;
+  width: 53.66667%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: brown; }
 
 .col-8 {
-  width: 63.33333%;
+  width: 61.33333%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: #676767; }
 
 .col-9 {
-  width: 71.25%;
+  width: 69%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: blue; }
 
 .col-10 {
-  width: 79.16667%;
+  width: 76.66667%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: #cc8400; }
 
 .col-11 {
-  width: 87.08333%;
+  width: 84.33333%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px;
   background-color: #3333ff; }
 
 .col-12 {
-  width: 95%;
+  width: 92%;
   text-align: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-left: 10px; }
+  margin: 5px; }
 
 body {
-  color: #979797; }
+  color: #979797;
+  font-size: calc(12px + .25vmax);
+  width: 90%;
+  margin: 0 auto; }
 
 a {
   color: #F59D2A; }
@@ -115,32 +94,56 @@ a {
   .header-row .brand-info {
     padding-top: 5px; }
     .header-row .brand-info h2 {
+      font-weight: normal;
       font-size: 3vmax; }
 
 .nav-list {
   align-self: center;
-  background-color: #232323; }
+  display: flex;
+  background-color: #232323;
+  height: 5vmax;
+  align-items: center;
+  justify-content: center; }
   .nav-list li {
     display: inline;
-    margin: 5px;
-    font-size: calc(10px + .5vmax); }
+    margin: .5vw;
+    line-height: 3;
+    font-size: calc(9px + .25vmax); }
 
 .big-image-row {
   justify-content: flex-end;
-  height: 30vh; }
+  height: 25vmax; }
+  .big-image-row .big-image {
+    background-color: #CCCCCC; }
+  .big-image-row .empty-col {
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #CCCCCC; }
 
 .article {
   text-align: left;
-  font-size: calc(12px + .25vmax); }
+  font-size: calc(10px + .25vmax);
+  line-height: 1.5; }
   .article .small-image {
+    background-color: #CCCCCC;
     float: left;
-    height: 6vmax; }
+    height: 6vmax;
+    box-shadow: inset 0px 0px 0px 4px  white;
+    border: 1px solid white; }
   .article a {
-    float: right; }
+    float: right;
+    text-decoration: none; }
 
-footer {
-  background-color: #333333;
+.footer-row {
+  justify-content: flex-start;
+  background-color: #232323;
   margin-top: 5vmax;
   height: 5vmax; }
+
+.bottom-text {
+  align-self: center; }
+  .bottom-text p {
+    font-size: calc(9px + .25vmax);
+    float: left;
+    padding-left: 5vmax; }
 
 /*# sourceMappingURL=style.css.map */
